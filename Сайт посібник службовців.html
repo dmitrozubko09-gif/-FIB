@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Federal Investigation Bureau (FIB)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+
+    nav button {
+      font-size: 1.2em;
+      color: #fff;
+      background-color: #3498db;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #2980b9;
+    }
+
+    .content-section {
+      display: none;
+      max-width: 900px;
+      padding: 40px 20px;
+      margin: 50px 0;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .content-section.active {
+      display: block;
+    }
+
+    .content-section h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .content-section p {
+      line-height: 1.6;
+      color: #34495e;
+    }
+
+    /* Кнопка "Назад" */
+    .back-btn {
+      margin-top: 30px;
+      background-color: #e74c3c;
+    }
+
+    .back-btn:hover {
+      background-color: #c0392b;
+    }
+
+    /* Фотогалерея */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .gallery div {
+      text-align: center;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+
+    .gallery p {
+      margin-top: 5px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Federal Investigation Bureau (FIB)</h1>
+  <p>Зміст:</p>
+</header>
+
+<nav>
+  <button onclick="showSection('slide1')">1. Екскурсія по території FIB</button>
+  <button onclick="showSection('slide2')">2. Керівний склад FIB</button>
+  <button onclick="showSection('slide3')">3. Керівні документи, кодекси</button>
+  <button onclick="showSection('slide4')">4. Перші кроки</button>
+  <button onclick="showSection('slide5')">5. DataBase</button>
+  <button onclick="showSection('slide6')">6. Звіт складу</button>
+  <button onclick="showSection('slide7')">7. Вимоги</button>
+</nav>
+
+<!-- Розділи контенту -->
+
+<!-- Розділ 1: Екскурсія -->
+<section id="slide1" class="content-section">
+  <h2>1. Екскурсія по території FIB</h2>
+
+  <div class="gallery">
+    <div>
+      <img src="https://cdn.imgpile.com/f/f09bbib_xl.png" alt="Хол">
+      <p>1. Хол</p>
+    </div>
+
+    <div>
+      <img src="https://cdn.imgpile.com/f/CKsJNdc_xl.png" alt="Коридор Холу">
+      <p>2. Коридор Холу</p>
+    </div>
+
+    <div>
+      <img src="https://cdn.imgpile.com/f/n5q9XZE_xl.png" alt="Ліфт на кришу">
+      <p>3. Ліфт на кришу</p>
+    </div>
+
+    <div>
+      <img src="https://cdn.imgpile.com/f/GXhrPRb_xl.png" alt="Парковка">
+      <p>4. Парковка</p>
+    </div>
+
+    <div>
+      <img src="https://cdn.imgpile.com/f/kGLc30g_xl.png" alt="Склад озброєння">
+      <p>5. Склад озброєння</p>
+    </div>
+
+    <div>
+      <img src="https://cdn.imgpile.com/f/Z1HwNuI_xl.png" alt="Особиста шафа">
+      <p>6. Особиста шафа</p>
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="hideSections()">Назад до змісту</button>
+</section>
+
+<!-- Розділ 2 -->
+<!-- Розділ 2 -->
+<section id="slide2" class="content-section">
+  <h2>2. Керівний склад FIB</h2>
+  
+  <p>Тут розміщується інформація про керівників та їх обов’язки:</p>
+  
+  <ol>
+    <li>Директор FIB – Jacob Gregory</li>
+    <li>Заступник директора FIB – Ignar Oreo</li>
+    <li>Заступник директора FIB – Cris Proshaev</li>
+    <li>Head. HRB – Ilya Castro</li>
+    <li>Head. CID - Jack Smitten</li>
+    <li>Head. DI – Denis Proshaev</li>
+    <li>Head. ATF - Nikolas Nord</li>
+    <li>Dep. H. HRB – Dmytro Balford</li>
+    <li>Dep. H. CID - Logan Bruks</li>
+    <li>Dep. H. DI – Skezz Nord</li>
+    <li>Dep. H. ATF - Kristina Nord</li>
+  </ol>
+
+  <button class="back-btn" onclick="hideSections()">Назад до змісту</button>
+</section>
+
+
+<!-- Розділ 3 -->
+<section id="slide3" class="content-section">
+  <h2>3. Керівні документи, кодекси</h2>
+
+  <p style="text-align:center; color:#555; margin-bottom:20px;">
+    📘 Натисніть на документ, щоб відкрити його
+  </p>
+
+  <div class="books-grid">
+    <div class="book" onclick="openDoc('statute')">
+      <span>Внутрішній статут FIB</span>
+    </div>
+
+    <div class="book" onclick="openDoc('constitution')">
+      <span>Конституція San-Andreas</span>
+    </div>
+
+    <div class="book" onclick="openDoc('process')">
+      <span>Процесуальний кодекс</span>
+    </div>
+
+    <div class="book" onclick="openDoc('criminal')">
+      <span>Кримінальний кодекс</span>
+    </div>
+
+    <div class="book" onclick="openDoc('admin')">
+      <span>Адміністративний кодекс</span>
+    </div>
+
+    <div class="book" onclick="openDoc('ethic')">
+      <span>Етичний кодекс</span>
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="hideSections()">Назад до змісту</button>
+</section>
+
+<style>
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.book {
+  position: relative;
+  background: linear-gradient(145deg, #0a2a5e, #061a3a);
+  color: #00aaff;
+  height: 220px;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: 0.3s;
+  animation: pulse 3s infinite;
+}
+
+.book:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 25px rgba(0,170,255,0.9);
+}
+
+/* Підказка */
+.book::after {
+  content: "Натисніть для відкриття";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75em;
+  color: #ffffff;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.book:hover::after {
+  opacity: 1;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 rgba(0,170,255,0.2); }
+  50% { box-shadow: 0 0 20px rgba(0,170,255,0.6); }
+  100% { box-shadow: 0 0 0 rgba(0,170,255,0.2); }
+}
+</style>
+
+<script>
+function openDoc(type) {
+  const links = {
+    statute: "https://forum.ukraine-gta5.com.ua/threads/fib-%D0%92%D0%BD%D1%83%D1%82%D1%80%D1%96%D1%88%D0%BD%D1%96%D0%B9-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%82.215/",
+    constitution: "https://forum.ukraine-gta5.com.ua/threads/%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D1%96%D1%8F.864/",
+    process: "https://forum.ukraine-gta5.com.ua/threads/%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9-%D0%BA%D0%BE%D0%B4%D0%B5%D0%BA%D1%81.197/",
+    criminal: "https://forum.ukraine-gta5.com.ua/index.php?threads/%D0%9A%D1%80%D0%B8%D0%BC%D1%96%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9-%D0%BA%D0%BE%D0%B4%D0%B5%D0%BA%D1%81.192/",
+    admin: "https://forum.ukraine-gta5.com.ua/index.php?threads/%D0%90%D0%B4%D0%BC%D1%96%D0%BD%D1%96%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B8%D0%B9-%D0%BA%D0%BE%D0%B4%D0%B5%D0%BA%D1%81.1001/",
+    ethic: "https://forum.ukraine-gta5.com.ua/index.php?threads/fib-%D0%94%D0%B8%D1%81%D1%86%D0%B8%D0%BF%D0%BB%D1%96%D0%BD%D0%B0%D1%80%D0%BD%D1%96-%D0%BF%D0%BE%D0%BA%D0%B0%D1%80%D0%B0%D0%BD%D0%BD%D1%8F-%D0%B4%D0%BB%D1%8F-%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%96%D0%B2.3144/"
+  };
+
+  window.open(links[type], "_blank");
+}
+</script>  
+</script>
+<!-- Розділ 4 -->
+<section id="slide4" class="content-section">
+  <h2>4. Перші кроки</h2>
+
+  <div class="steps-container">
+
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-content">
+        <h3>Ознайомитись з Discord каналом та форумом</h3>
+        <p>
+          Новий співробітник зобов’язаний ознайомитись з основними Discord-каналами,
+          внутрішніми темами та форумом FIB.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">2</div>
+      <div class="step-content">
+        <h3>Ознайомитись з системою підвищення</h3>
+        <p>Система підвищення складається з етапів:</p>
+        <ul>
+          <li>🎓 Trainee → Junior Agent</li>
+          <li>🟢 Junior Agent → Agent</li>
+          <li>🟡 Agent → Senior Agent</li>
+          <li>🔵 Senior Agent → Special Agent</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">3</div>
+      <div class="step-content">
+        <h3>Проходження навчання</h3>
+        <p>
+          Обов’язкове проходження теоретичної та практичної підготовки під
+          керівництвом HRB.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">4</div>
+      <div class="step-content">
+        <h3>Закріплення за підрозділом</h3>
+        <p>
+          Після завершення навчання агент закріплюється за відповідним підрозділом FIB.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="back-btn" onclick="hideSections()">Назад до змісту</button>
+</section>
+
+<style>
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.step {
+  display: flex;
+  gap: 20px;
+  background: #f9f9fb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.step-number {
+  min-width: 50px;
+  height: 50px;
+  background: #3498db;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-content h3 {
+  margin: 0 0 10px;
+  color: #2c3e50;
+}
+
+.step-content p,
+.step-content li {
+  color: #34495e;
+  line-height: 1.5;
+}
+</style>
+
+<!-- Розділ 5 -->
+<section id="slide5" class="content-section">
+  <h2>5. DataBase</h2>
+
+  <!-- STYLE ТІЛЬКИ ДЛЯ ЦЬОГО РОЗДІЛУ -->
+  <style>
+    .db-card {
+      margin: 30px auto;
+      width: 300px;
+      height: 170px;
+      background: linear-gradient(145deg, #0a2a5e, #061a3a);
+      color: #00aaff;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0,170,255,0.5);
+      transition: 0.3s;
+    }
+
+    .db-card span {
+      margin-top: 8px;
+      font-size: 0.75em;
+      color: #ffffff;
+      opacity: 0.8;
+    }
+
+    .db-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 0 25px rgba(0,170,255,0.9);
+    }
+
+    .db-warning {
+      margin-top: 20px;
+      padding: 15px;
+      background: #fff3cd;
+      border-left: 5px solid #f1c40f;
+      color: #7a5c00;
+      border-radius: 6px;
+    }
+  </style>
+
+  <ul style="line-height:1.8; color:#2c3e50;">
+    <li><strong>Правила заповнення DataBase:</strong></li>
+    <li>DataBase заповнюється після проведення арешту затриманого</li>
+    <li>Заповнення здійснюється відповідно до встановлених норм на сайті</li>
+  </ul>
+
+  <!-- КЛІКАБЕЛЬНИЙ КВАДРАТ -->
+  <div class="db-card" onclick="openDatabase()">
+    📂 ВІДКРИТИ DATABASE
+    <span>Натисніть, щоб перейти</span>
+  </div>
+
+  <!-- ПРИМІТКА -->
+  <div class="db-warning">
+    <strong>⚠ Примітка:</strong><br>
+    Зверніть увагу на встановлення особи, правильно завантажуйте фоторобот.<br>
+    <strong>Обов’язково</strong> зробіть скрін обличчя людини.<br>
+    Бажано обрізати зображення зайвого навколо, щоб завантажити фото.<br>
+    Якщо зображення важить більше, ніж потрібно — файл не надішлеться,
+    і згодом до вас можуть виникнути питання.
+  </div>
+
+  <button class="back-btn" onclick="hideSections()">Назад до змісту</button>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function openDatabase() {
+      window.open("https://ug5-database.vercel.app/", "_blank");
+    }
+  </script>
+</section>
+
+
+<!-- Розділ 6 -->
+<section id="slide6" class="content-section">
+  <h2>6. Звіт складу</h2>
+
+  <!-- STYLE ТІЛЬКИ ДЛЯ 6 КАТЕГОРІЇ -->
+  <style>
+    .stock-list {
+      line-height: 1.8;
+      color: #2c3e50;
+      margin-bottom: 25px;
+    }
+
+    .stock-card {
+      margin: 25px auto;
+      width: 320px;
+      height: 180px;
+      background: linear-gradient(145deg, #2c0a0a, #3a0606);
+      color: #ff4d4d;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(255,77,77,0.4);
+      transition: 0.3s;
+    }
+
+    .stock-card span {
+      margin-top: 8px;
+      font-size: 0.75em;
+      color: #ffffff;
+      opacity: 0.85;
+    }
+
+    .stock-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 0 30px rgba(255,77,77,0.9);
+    }
+
+    .stock-warning {
+      margin-top: 20px;
+      padding: 15px;
+      background: #f8d7da;
+      border-left: 5px solid #dc3545;
+      color: #721c24;
+      border-radius: 6px;
+    }
+  </style>
+
+  <!-- ТЕКСТ -->
+  <ul class="stock-list">
+    <li><strong>Звіт складу заповнюється у наступних випадках:</strong></li>
+    <li>При взятті зброї, сухпайка або аптечки</li>
+    <li>Звіт подається <strong>обов’язково</strong> після кожного використання складу</li>
+    <li>
+      Співробітник, який не відписався у звіті складу,
+      може бути покараний у вигляді:
+      зауваження, штрафу, догани або звільнення
+    </li>
+  </ul>
+
+  <!-- КЛІКАБЕЛЬНИЙ КВАДРАТ -->
+  <div class="stock-card" onclick="openStockReport()">
+    📦 ЗВІТ СКЛАДУ FIB
+    <span>Натисніть для відкриття</span>
+  </div>
+
+  <!-- ПОПЕРЕДЖЕННЯ -->
+  <div class="stock-warning">
+    <strong>⚠ Увага:</strong><br>
+    Усі дії зі складом повинні бути задокументовані.<br>
+    Відсутність звіту розцінюється як порушення службових правил.
+  </div>
+
+  <button class="back-btn" onclick="hideSections()">Назад до змісту</button>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function openStockReport() {
+      window.open("https://fib-sklad-dashboard.vercel.app/", "_blank");
+    }
+  </script>
+</section>
+
+<!-- Розділ 7 -->
+<section id="slide7" class="content-section">
+  <h2>7. Вимоги та дисципліна</h2>
+
+  <!-- STYLE -->
+  <style>
+    .rules-list {
+      line-height: 1.9;
+      color: #2c3e50;
+      font-size: 1.05em;
+      margin-bottom: 25px;
+    }
+
+    .rules-list li {
+      margin-bottom: 10px;
+    }
+
+    .rules-warning {
+      margin-top: 20px;
+      padding: 15px;
+      background: #fff3cd;
+      border-left: 5px solid #f1c40f;
+      color: #7a5c00;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    .rules-warning strong {
+      color: #b77900;
+    }
+  </style>
+
+  <!-- ВИМОГИ -->
+  <ul class="rules-list">
+    <li>Суворо дотримуватися правил проєкту</li>
+    <li>Дотримуватися внутрішнього статуту</li>
+    <li>Не ігнорувати накази та вказівки старшого керівного складу</li>
+    <li>Поважати колег та оперативно реагувати на надзвичайні виклики</li>
+    <li>Поводити себе адекватно у спілкуванні з іншими гравцями</li>
+  </ul>
+
+  <!-- ПРИМІТКА -->
+  <div class="rules-warning">
+    <strong>⚠ Примітка:</strong><br>
+    У разі порушення вищезазначених вимог,
+    до співробітника буде застосоване
+    дисциплінарне стягнення.
+  </div>
+
+  <button class="back-btn" onclick="hideSections()">Назад до змісту</button>
+</section>
+
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('.content-section').forEach(section => {
+      section.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+    document.querySelector('nav').style.display = 'none';
+    document.querySelector('header p').style.display = 'none';
+  }
+
+  function hideSections() {
+    document.querySelectorAll('.content-section').forEach(section => {
+      section.classList.remove('active');
+    });
+    document.querySelector('nav').style.display = 'flex';
+    document.querySelector('header p').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
